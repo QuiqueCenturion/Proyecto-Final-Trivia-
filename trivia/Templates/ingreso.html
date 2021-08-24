@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %} Registro {% endblock %}
+
+{% block body %}
+<div>
+    <article class="registro">
+        <p>Ingrese datos</p>
+        <label for="">Usuario</label>
+        <br>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{error}}
+            <input type="text" placeholder="Ingrese Usuario" name="username">
+            <br>
+            <label for="">Contraseña</label>
+            <br>
+            <input type="password" placeholder="Ingrese contraseña" name="password">
+            <br>
+            <button type="submit">Ingrese</button>
+        </form>
+        <br>
+        <a href="/registro">¿No tiene una cuenta?</a>
+        <br>
+        <a href="#">¿Olvidó su contraseña o cuenta?</a>
+    </article>
+</div>
+{% endblock %}

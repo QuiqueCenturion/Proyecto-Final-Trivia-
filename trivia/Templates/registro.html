@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %} Registro {% endblock %}
+
+{% block body %}
+<div>
+    <article class="registro">
+        <p>Cree su cuenta porfavor</p>
+        <label for="">Usuario</label>
+        <br>
+        <form action="login" method="POST">
+            <input type="text">
+            <br>
+            <label for="">Contraseña</label>
+            <br>
+            <input type="password">
+            <br>
+            <label for="">Contraseña nuevamente</label>
+            <br>
+            <input type="password">
+            <br>
+            <label for="">Correo Electrónico</label>
+            <br>
+            <input type="email">
+            <button type="submit">Registrarse</button>
+        </form>
+    </article>
+</div>
+{% endblock %}
